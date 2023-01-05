@@ -43,10 +43,10 @@ development:
   user: postgres
   post: 5432
   password: doghee12
-# production:
-#   <<: *default
-#   url: <%= ENV['postgresql://postgres:IWpiaHoN7DhCvSqvuEo1@containers-us-west-66.railway.app:6286/railway'] %>
-#   database: railway
-#   host: containers-us-west-66.railway.app
-#   user: postgres
-#   password: IWpiaHoN7DhCvSqvuEo1
+production:
+  <<: *default
+  url: <%= ENV['postgresql://postgres:IWpiaHoN7DhCvSqvuEo1@containers-us-west-66.railway.app:6286/railway'] %>
+  database: railway
+  host: containers-us-west-66.railway.app
+  user: postgres
+  password: IWpiaHoN7DhCvSqvuEo1
